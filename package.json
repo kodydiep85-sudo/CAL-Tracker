@@ -1,0 +1,14 @@
+{
+  "name": "calorie-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Calorie tracker with barcode scanning",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"No build needed\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

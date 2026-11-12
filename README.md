@@ -9,7 +9,23 @@ A calorie and macro tracker that installs on your phone like an app.
 - Daily goal, macro bars, 7-day chart
 - Works offline; data saved on your phone (export a backup in Settings)
 
-## Put it online (GitHub Pages)
+## Put it online with Render
+
+First upload all these files to a GitHub repo. They must be at the **top level** of the repo (you should see `index.html` right on the repo's main page, not inside a folder).
+
+**Option A: Static Site (easiest, free)**
+1. Render → **New** → **Static Site** → pick your repo
+2. Build Command: leave **blank** (or `echo done`)
+3. Publish Directory: `.`
+4. Create Static Site
+
+**Option B: Web Service** (if you already made one)
+1. Settings → Runtime: **Node**
+2. Build Command: `npm install`
+3. Start Command: `npm start`
+4. Save and deploy (Manual Deploy → Deploy latest commit)
+
+## Or put it online with GitHub Pages
 
 1. Create a new **public** repo on GitHub, e.g. `calorie-tracker`.
 2. Upload all files in this folder (`index.html`, `sw.js`, `manifest.webmanifest`, the 3 icons). Keep them at the top level.

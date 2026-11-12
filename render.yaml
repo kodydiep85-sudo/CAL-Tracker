@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: calorie-tracker
+    runtime: static
+    staticPublishPath: .
+    buildCommand: echo "No build needed"
+    headers:
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache
